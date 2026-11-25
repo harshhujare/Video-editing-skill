@@ -1,0 +1,15 @@
+{
+  "aspectRatio": "9:16",
+  "delivery": "uri",
+  "targetFps": 60,
+  "targetResolution": "1080x1920",
+  "tailHandleMs": 300,
+  "mandatoryNegativePrompt": "NO in-camera text, NO signage, NO subtitles, NO watermarks, NO gibberish letters",
+  "paletteInjection": "Deep charcoal shadows (#0D0F12), subtle cobalt (#1E5EFF) rim accents, warm paper-white highlights (#F5F3EE), zero off-palette neon greens or magentas.",
+  "archetypeFraming": {
+    "P2_BROLL_TEXT": "Vertical 9:16 (1080x1920), cinematic commercial footage. Medium-wide shot with a darker, low-contrast center third (y: 750-1150) for centered caption legibility.",
+    "P7_CENTER_ILLUSTRATION": "Vertical 9:16 (1080x1920), cinematic studio plate. Hero subject centered waist-up against a clean dark textured backdrop with crisp hair and shoulder rim light for foreground matte separation.",
+    "P8_SIDE_ILLUSTRATION": "Vertical 9:16 (1080x1920), cinematic split composition. Frame the hero subject strictly in the left 45% (or right 45%), leaving the opposite 55% in smooth out-of-focus dark bokeh for editorial typography.",
+    "P9_OBJECT_CALLOUT": "Vertical 9:16 (1080x1920), macro 3D studio product showcase. Isolated object floating dead center (x: 540, y: 960) over a dark matte surface with realistic directional cast shadow and subtle edge dust particles."
+  }
+}

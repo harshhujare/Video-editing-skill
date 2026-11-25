@@ -1,0 +1,37 @@
+# Dependencies & lockfiles
+node_modules/
+package-lock.json
+
+# Build, render & multi-project working directories
+build/
+output/
+Final-edited-video/
+raw-videos/
+training/
+projects/
+artifacts/
+input/
+.active_project
+
+# Heavy binary assets & project-specific Remotion scenes (keep only shared src/primitives & src/styles)
+public/
+src/scenes/
+src/Root.tsx
+src/AudioTimeline.tsx
+
+# Reference training videos inside skills
+.agents/skills/01-style-dna-extractor/references/motion_graphics/
+.agents/skills/01-style-dna-extractor/references/Storytelling/
+.agents/skills/01-style-dna-extractor/references/talking-head/
+.agents/skills/**/*.mp4
+.agents/skills/**/*.wav
+.agents/skills/**/*.mp3
+
+# Python, environment & OS files
+__pycache__/
+*.py[cod]
+.venv/
+.env
+*.key
+.DS_Store
+Thumbs.db

@@ -1,0 +1,112 @@
+{
+  "fps": 60,
+  "preLapMs": -35,
+  "preLapFrames": -2,
+  "antiMachineGun": {
+    "windowSeconds": 3.0,
+    "windowFrames": 180,
+    "pitchStepSemitones": 0.6,
+    "stereoPanSequence": [-0.18, 0.0, 0.18]
+  },
+  "vocalPocketEq": {
+    "centerFreqHz": 2500,
+    "gainDb": -4.5,
+    "qFactor": 1.4,
+    "nonImpactHighPassHz": 90
+  },
+  "sfxTriggers": {
+    "hookTextEnter": {
+      "appliesTo": ["P1_CAPTION", "P2_BROLL_TEXT"],
+      "condition": "Hook text enter or lower-third slide peak frame",
+      "acousticPrompt": "Deep warm sub-bass thump at 60Hz paired with a tight, short silk air whoosh, 0.3 seconds, dry studio mix",
+      "asset": "assets/sfx/minimal_whoosh.wav",
+      "gainDb": -15,
+      "linearVolume": 0.178,
+      "frameOffset": -2
+    },
+    "keywordReveal": {
+      "appliesTo": ["P1_CAPTION", "P2_BROLL_TEXT", "P3_PAINTING", "P4_LINE_TEXT", "P5_LINE_ILLUSTRATION", "P6_QUOTE_SCENE", "P7_CENTER_ILLUSTRATION", "P8_SIDE_ILLUSTRATION", "P9_OBJECT_CALLOUT"],
+      "condition": "Playfair Display keyword entry, selector box lock, or arrow draw peak frame",
+      "acousticPrompt": "Crisp tactile mechanical camera shutter click and subtle muted wooden pop, 0.15 seconds, no echo",
+      "asset": "assets/sfx/soft_click.wav",
+      "gainDb": -14,
+      "linearVolume": 0.20,
+      "frameOffset": -2
+    },
+    "moleculePop": {
+      "appliesTo": ["P7_CENTER_ILLUSTRATION", "P8_SIDE_ILLUSTRATION", "P9_OBJECT_CALLOUT"],
+      "condition": "Molecule pop or circle appear peak frame",
+      "acousticPrompt": "Soft organic water-droplet marimba pop with warm low-mid body, 0.2 seconds, dry",
+      "asset": "assets/sfx/molecule_pop.wav",
+      "gainDb": -15,
+      "linearVolume": 0.178,
+      "frameOffset": -2
+    },
+    "lineDrawLoop": {
+      "appliesTo": ["P4_LINE_TEXT", "P5_LINE_ILLUSTRATION", "P10_DARK_GRAPH"],
+      "condition": "strokeDashoffset active range [startFrame, endFrame]",
+      "asset": "assets/sfx/highlighter_draw.wav",
+      "gainDb": -12,
+      "linearVolume": 0.251,
+      "frameOffset": 0,
+      "loop": true
+    },
+    "graphStepVertex": {
+      "appliesTo": ["P10_DARK_GRAPH"],
+      "condition": "stair-step vertex hit or graph rise buildup",
+      "acousticPrompt": "Fast ascending digital ratchet ticks accelerating smoothly over 0.8 seconds, clean transient",
+      "asset": "assets/sfx/graph_step_tick.wav",
+      "gainDb": -17,
+      "linearVolume": 0.141,
+      "frameOffset": -2,
+      "playbackRateBase": 1.0,
+      "playbackRateStepIncrement": 0.06
+    },
+    "cameraSlideWhoosh": {
+      "appliesTo": ["P3_PAINTING", "P7_CENTER_ILLUSTRATION", "P8_SIDE_ILLUSTRATION", "P9_OBJECT_CALLOUT"],
+      "condition": "camera slide-in or stepped reveal peak frame",
+      "acousticPrompt": "Deep warm sub-bass thump at 60Hz paired with a tight, short silk air whoosh, 0.3 seconds, dry studio mix",
+      "asset": "assets/sfx/minimal_whoosh.wav",
+      "gainDb": -15,
+      "linearVolume": 0.178,
+      "frameOffset": -2
+    },
+    "shutterImpact": {
+      "appliesTo": ["P2_BROLL_TEXT", "P3_PAINTING", "P9_OBJECT_CALLOUT"],
+      "condition": "shutter breakthrough or major visual impact",
+      "acousticPrompt": "Punchy cinematic low-end impact hit with crisp glass/ceramic crackle transient, tight decay",
+      "asset": "assets/sfx/shutter_impact.wav",
+      "gainDb": -11,
+      "linearVolume": 0.282,
+      "frameOffset": -2
+    }
+  },
+  "v2aFoley": {
+    "negativePrompt": "music, melody, singing, speech, talking, crowd chatter, heavy reverb",
+    "targetRmsDb": -20
+  },
+  "musicBed": {
+    "directory": "public/assets/music/",
+    "defaultAsset": "assets/music/neoclassical_minimal_bed.mp3",
+    "ducking": {
+      "speechGainDb": -23,
+      "speechLinearVolume": 0.071,
+      "pauseSwellGainDb": -14,
+      "pauseSwellLinearVolume": 0.20,
+      "minPauseMsForSwell": 300,
+      "rampFrames": 12,
+      "outroFadeOutFrames": 24
+    }
+  },
+  "renderProfile": {
+    "entryPoint": "src/index.ts",
+    "compositionId": "MainVideo",
+    "rawOutputPath": "output/final_master_raw.mp4",
+    "outputPath": "output/final_master.mp4",
+    "targetLufs": -14.0,
+    "maxTruePeakDb": -1.0,
+    "codec": "h264",
+    "crf": 18,
+    "pixelFormat": "yuv420p"
+  }
+}

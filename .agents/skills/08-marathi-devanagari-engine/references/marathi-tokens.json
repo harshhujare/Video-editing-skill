@@ -1,0 +1,52 @@
+{
+  "language": "mr",
+  "scriptHybrid": ["Devanagari", "Latin"],
+  "unicodeRanges": {
+    "devanagari": "U+0900-097F, U+1CD0-1CFF, U+A8E0-A8FF",
+    "latinAndNumerals": "U+0000-00FF, U+20B9"
+  },
+  "fontStacks": {
+    "styleA_luxuryEditorial": {
+      "label": "Luxury Editorial (Finance, Wealth, Authority)",
+      "fontRegular": {
+        "devanagari": { "family": "Mukta", "fallback": "Hind", "weight": 400, "sizeAdjust": "108%" },
+        "latin": { "family": "Inter", "weight": 400 }
+      },
+      "fontSpecial": {
+        "devanagari": { "family": "Rozha One", "fallback": "Tiro Devanagari Marathi", "weight": 400, "allowItalic": false },
+        "latin": { "family": "Playfair Display", "weight": 700, "style": "italic" }
+      }
+    },
+    "styleB_highImpactBold": {
+      "label": "High-Impact Modern Bold (Hooks & Infographics)",
+      "fontRegular": {
+        "devanagari": { "family": "Noto Sans Devanagari", "fallback": "Poppins", "weight": 400, "sizeAdjust": "106%" },
+        "latin": { "family": "Inter", "weight": 400 }
+      },
+      "fontSpecial": {
+        "devanagari": { "family": "Khand", "fallback": "Yatra One", "weight": 700, "allowItalic": false, "maxScalePx": 110 },
+        "latin": { "family": "Inter", "weight": 700 }
+      }
+    }
+  },
+  "layoutOverrides": {
+    "minBodyWeightDevanagari": 400,
+    "forbidDevanagariItalic": true,
+    "minLineHeight": 1.42,
+    "minVerticalPaddingPx": 20,
+    "minMatraBreathingRoomPx": 12,
+    "maxWordsPerCard": 5,
+    "maxGraphemesPerCard": 28,
+    "specialScaleMultiplier": 1.3,
+    "rotoscopedBackTextMaxSizePx": 200,
+    "rotoscopedTorsoOverlapMaxRatio": 0.25,
+    "requireIntlSegmenter": true
+  },
+  "asrOverrides": {
+    "pass1Language": "mr",
+    "pass1Model": "large-v3",
+    "minSilenceMs": 250,
+    "paddingMs": 30,
+    "preserveLatinFor": ["SIP", "SWP", "EMI", "FD", "RD", "GDP", "ADHD", "ROI", "CAGR", "Nifty", "Sensex", "Tax Free", "Return"]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "language": "mr-IN",
+  "description": "Domain glossary for Multimodal Marathi Proofreader (Pass 2). Copy to input/glossary-mr.json and customize per video.",
+  "keep_latin": [
+    "SIP",
+    "SWP",
+    "EMI",
+    "FD",
+    "RD",
+    "CAGR",
+    "ROI",
+    "GDP",
+    "ITR",
+    "GST",
+    "Mutual Fund",
+    "Tax Free",
+    "Bluechip",
+    "Nifty 50",
+    "Sensex"
+  ],
+  "preferred_devanagari_spellings": {
+    "गॅरंटी": "गॅरंटी",
+    "म्युच्युअल फंड": "म्युच्युअल फंड",
+    "चक्रवाढ व्याज": "चक्रवाढ व्याज",
+    "महागाई": "महागाई",
+    "गुंतवणूक": "गुंतवणूक",
+    "आर्थिक नियोजन": "आर्थिक नियोजन",
+    "कोट्यधीश": "कोट्यधीश",
+    "पेंशन": "पेंशन",
+    "नुकसान": "नुकसान",
+    "फोकस": "फोकस"
+  },
+  "number_formatting": {
+    "currency_symbol": "₹",
+    "pattern_examples": ["₹50 लाख", "₹10,000", "12%", "15 वर्षे"]
+  }
+}

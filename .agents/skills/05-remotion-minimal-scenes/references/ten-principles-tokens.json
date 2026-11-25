@@ -1,0 +1,82 @@
+{
+  "canvas": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 60,
+    "safeMargins": {
+      "top": 180,
+      "bottom": 260,
+      "left": 80,
+      "right": 80
+    }
+  },
+  "colors": {
+    "paperWhite": "#F5F3EE",
+    "paperPure": "#FFFFFF",
+    "charcoalCanvas": "#0D0F12",
+    "accentCobalt": "#1E5EFF",
+    "cobaltPaper": "#14379E",
+    "inkDark": "#121316",
+    "inkMuted": "#4E525B",
+    "gridGlow": "rgba(255, 255, 255, 0.12)",
+    "quoteMarkOpacity": 0.25
+  },
+  "typography": {
+    "primarySans": {
+      "family": "Inter",
+      "weights": [400, 700]
+    },
+    "accentSerif": {
+      "family": "Playfair Display",
+      "styles": ["italic"],
+      "weights": [400, 700]
+    },
+    "scale": {
+      "keywordPx": { "min": 72, "default": 80, "max": 88 },
+      "supportingPx": { "min": 34, "default": 38, "max": 42 },
+      "quoteMarkPx": 180,
+      "calloutLabelPx": 32
+    },
+    "captionRules": {
+      "maxWordsPerCard": 5,
+      "minCardDurationFrames": 24,
+      "springEntryFrames": 6
+    }
+  },
+  "motion": {
+    "slideInEasing": "cubic-bezier(0.16, 1, 0.3, 1)",
+    "slideInDurationFrames": 18,
+    "stopMotionStepFrames": 12,
+    "minComplexSceneHoldFrames": 90,
+    "svgStrokeWidth": 6,
+    "nodeDotRadius": 10
+  },
+  "textures": {
+    "cameraBoundRequired": true,
+    "opacityRange": {
+      "min": 0.12,
+      "default": 0.18,
+      "max": 0.22
+    },
+    "files": {
+      "paperLight": "assets/textures/paper_light.png",
+      "paperRoughWhite": "assets/textures/paper_rough_white.png",
+      "paperCobaltBlue": "assets/textures/paper_cobalt_blue.png",
+      "paperDarkCharcoal": "assets/textures/paper_dark_charcoal_grain.png",
+      "clothRough": "assets/textures/cloth_rough.png",
+      "paintBrushMask": "assets/textures/paint_brush_mask.png"
+    }
+  },
+  "principlesLayout": {
+    "P1_CAPTION": { "captionTopPercent": 68 },
+    "P2_BROLL_TEXT": { "captionTopPercent": 46 },
+    "P3_PAINTING": { "mask": "paint_brush_mask.png", "slideInFrames": 18 },
+    "P4_LINE_TEXT": { "strokeColor": "#1E5EFF", "strokeWidth": 6 },
+    "P5_LINE_ILLUSTRATION": { "minHoldFrames": 90, "nodeRadius": 10 },
+    "P6_QUOTE_SCENE": { "requireOpeningAndClosingQuotes": true, "quoteMarkPx": 180 },
+    "P7_CENTER_ILLUSTRATION": { "illustrationTopRangePercent": [45, 95], "minHoldFrames": 90 },
+    "P8_SIDE_ILLUSTRATION": { "flushEdge": true },
+    "P9_OBJECT_CALLOUT": { "revealFrames": 12 },
+    "P10_DARK_GRAPH": { "background": "#0D0F12", "gridColor": "rgba(255,255,255,0.12)", "sphereColor": "#1E5EFF" }
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "catalog_version": "1.0.0",
+  "style_name": "Arthur Brooks Minimal",
+  "fps": 60,
+  "target_total_references": 225,
+  "populated_count": 10,
+  "note": "Seed reference templates for all 10 visual principles. Run Skill 01 (style-dna-extractor) across 20 reference videos to expand entries to anim_001..anim_225.",
+  "principles_index": {
+    "P1_CAPTION": ["anim_001"],
+    "P2_BROLL_TEXT": ["anim_002"],
+    "P3_PAINTING": ["anim_003"],
+    "P4_LINE_TEXT": ["anim_004"],
+    "P5_LINE_ILLUSTRATION": ["anim_005"],
+    "P6_QUOTE_SCENE": ["anim_006"],
+    "P7_CENTER_ILLUSTRATION": ["anim_007"],
+    "P8_SIDE_ILLUSTRATION": ["anim_008"],
+    "P9_OBJECT_CALLOUT": ["anim_009"],
+    "P10_DARK_GRAPH": ["anim_010"]
+  },
+  "animations": [
+    {
+      "id": "anim_001",
+      "principle_id": "P1_CAPTION",
+      "label": "A-Roll Thesis Announcement",
+      "recommended_duration_frames": 180,
+      "min_hold_frames": 60,
+      "camera_motion": "static_aroll_with_6f_text_spring",
+      "camera_bound_texture": false,
+      "asset_requirements": ["build/aroll_trimmed.mp4"],
+      "trigger_contexts": ["new category", "hook", "thesis", "topic pivot"],
+      "keyframes_sheet": "references/animations/anim_001/keyframes.png"
+    },
+    {
+      "id": "anim_002",
+      "principle_id": "P2_BROLL_TEXT",
+      "label": "Vignetted Action B-Roll with Centered Dual Font",
+      "recommended_duration_frames": 180,
+      "min_hold_frames": 75,
+      "camera_motion": "slow_push_in_1.00_to_1.05",
+      "camera_bound_texture": true,
+      "asset_requirements": ["pexels_broll_vignetted_mp4", "paper_light.png"],
+      "trigger_contexts": ["action metaphor", "physical rebuilding", "visceral movement"],
+      "keyframes_sheet": "references/animations/anim_002/keyframes.png"
+    },
+    {
+      "id": "anim_003",
+      "principle_id": "P3_PAINTING",
+      "label": "Brush-Masked Classical Painting Slide-In",
+      "recommended_duration_frames": 210,
+      "min_hold_frames": 90,
+      "camera_motion": "fast_slide_in_18f_cubic_out",
+      "camera_bound_texture": true,
+      "asset_requirements": ["wikimedia_oil_painting", "paint_brush_mask.png", "paper_rough_white.png"],
+      "trigger_contexts": ["geographical story", "romantic reflection", "philosophical scene"],
+      "keyframes_sheet": "references/animations/anim_003/keyframes.png"
+    },
+    {
+      "id": "anim_004",
+      "principle_id": "P4_LINE_TEXT",
+      "label": "Tracked Cobalt Line Interrupted by Keywords",
+      "recommended_duration_frames": 210,
+      "min_hold_frames": 75,
+      "camera_motion": "camera_rig_tracks_svg_stroke_tip",
+      "camera_bound_texture": true,
+      "asset_requirements": ["paper_rough_white.png"],
+      "trigger_contexts": ["abstract concept", "causal chain", "value contrast"],
+      "keyframes_sheet": "references/animations/anim_004/keyframes.png"
+    },
+    {
+      "id": "anim_005",
+      "principle_id": "P5_LINE_ILLUSTRATION",
+      "label": "Horizontal Node or Zigzag Progression Line",
+      "recommended_duration_frames": 240,
+      "min_hold_frames": 90,
+      "camera_motion": "pan_along_nodes_or_zigzag_alternating",
+      "camera_bound_texture": true,
+      "asset_requirements": ["stippled_phase_svgs", "paper_rough_white.png"],
+      "trigger_contexts": ["multi-phase progression", "3-part list", "lifecycle steps"],
+      "keyframes_sheet": "references/animations/anim_005/keyframes.png"
+    },
+    {
+      "id": "anim_006",
+      "principle_id": "P6_QUOTE_SCENE",
+      "label": "Oversized Quote Marks Takeaway Canvas",
+      "recommended_duration_frames": 180,
+      "min_hold_frames": 90,
+      "camera_motion": "gentle_scale_drift_1.00_to_1.03",
+      "camera_bound_texture": true,
+      "asset_requirements": ["paper_cobalt_blue.png", "paper_rough_white.png"],
+      "trigger_contexts": ["closing punchline", "core maxim", "quotable insight"],
+      "keyframes_sheet": "references/animations/anim_006/keyframes.png"
+    },
+    {
+      "id": "anim_007",
+      "principle_id": "P7_CENTER_ILLUSTRATION",
+      "label": "Lower-Center Noisy Abstract Illustration & Radial Text",
+      "recommended_duration_frames": 240,
+      "min_hold_frames": 90,
+      "camera_motion": "stepped_spring_entry_then_hold",
+      "camera_bound_texture": true,
+      "asset_requirements": ["stippled_center_illustration", "cloth_rough.png", "paper_rough_white.png"],
+      "trigger_contexts": ["neuroscience", "psychology", "biographical character"],
+      "keyframes_sheet": "references/animations/anim_007/keyframes.png"
+    },
+    {
+      "id": "anim_008",
+      "principle_id": "P8_SIDE_ILLUSTRATION",
+      "label": "Edge-Anchored Profile or Cloth Semicircle Split",
+      "recommended_duration_frames": 210,
+      "min_hold_frames": 90,
+      "camera_motion": "edge_slide_in_with_rotating_text_ring",
+      "camera_bound_texture": true,
+      "asset_requirements": ["cloth_rough.png", "paper_rough_white.png"],
+      "trigger_contexts": ["internal conflict", "character perspective", "two-sided contrast"],
+      "keyframes_sheet": "references/animations/anim_008/keyframes.png"
+    },
+    {
+      "id": "anim_009",
+      "principle_id": "P9_OBJECT_CALLOUT",
+      "label": "Isolated Cutout Object with Stepped Reveal",
+      "recommended_duration_frames": 180,
+      "min_hold_frames": 75,
+      "camera_motion": "12f_stepped_stop_motion_reveal",
+      "camera_bound_texture": true,
+      "asset_requirements": ["rembg_object_cutout_png", "paper_rough_white.png"],
+      "trigger_contexts": ["specific object", "career artifact", "personal milestone"],
+      "keyframes_sheet": "references/animations/anim_009/keyframes.png"
+    },
+    {
+      "id": "anim_010",
+      "principle_id": "P10_DARK_GRAPH",
+      "label": "Dark Glowing Grid with Tracked Cobalt Data Sphere",
+      "recommended_duration_frames": 240,
+      "min_hold_frames": 90,
+      "camera_motion": "camera_rig_follows_blue_sphere_xy",
+      "camera_bound_texture": true,
+      "asset_requirements": ["paper_dark_charcoal_grain.png"],
+      "trigger_contexts": ["up and up", "slow and steady", "career trajectory", "plateau"],
+      "keyframes_sheet": "references/animations/anim_010/keyframes.png"
+    }
+  ]
+}
